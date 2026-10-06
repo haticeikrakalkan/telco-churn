@@ -43,7 +43,7 @@ def main():
         search = RandomizedSearchCV(
             pipeline,
             param_distributions=PARAM_GRID,
-            n_iter=5,
+            n_iter=20,
             cv=5,
             scoring="f1",
             n_jobs=-1,
